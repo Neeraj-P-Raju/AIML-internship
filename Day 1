@@ -1,1 +1,57 @@
 https://colab.research.google.com/drive/10TE0Y4v8nbv4uQmjHCjfg5Lim03Fok3R?usp=sharing
+
+
+[1]Write a function that accepts a string and returns the number of vowels in it
+s=input("String:")
+count=0
+for i in s:
+    if i.lower() in "aeiou":
+        count += 1
+print("Number of vowels =",count)
+
+[2]Write a function that accepts a string and a character and returns how many times that character appears
+s=input("string:")
+ch=input("character:")
+count=0
+for c in s:
+  if c == ch:
+    count +=1
+print("",count)
+
+[3]Write a function that accepts a number and returns True if it is prime, otherwise False
+def p(n):
+    if n <= 1:
+        return False
+    for i in range(2, n):
+        if n % i == 0:
+            return False
+    return True
+num = int(input("Enter a number: "))
+print(p(num))
+
+
+[4]Count Odd Digits Write a function that returns how many odd digits are present in a number
+n = input("Enter a number: ")
+count=0
+for dig in n:
+    if int(dig)%2 != 0:
+        count += 1
+print("Odd digits =",count)
+
+[5]Write a function that accepts a string and returns the string without any spaces
+s=input("Enter the string: ")
+r=s.replace(" ","")
+print(r)
+
+[6]Write a function that accepts three numbers and returns the smallest one
+a=int(input())
+b=int(input())
+c=int(input())
+def min(a,b,c):
+  if a<=b and a<=c:
+    return a
+  elif b<=a and b<=c:
+    return b
+  else:
+    return c
+min(a,b,c)
