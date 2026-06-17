@@ -1,4 +1,4 @@
-#tinyml https://micropython.org/unicorn/ moisture control which controls the servo motor angle
+#tinyml https://micropython.org/unicorn/ smart moisture control 
 import machine
 import pyb
 import time 
